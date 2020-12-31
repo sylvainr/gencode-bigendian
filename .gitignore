@@ -3,6 +3,8 @@
 *.a
 *.so
 
+.idea
+gencode-bigendian
 # Folders
 _obj
 _test

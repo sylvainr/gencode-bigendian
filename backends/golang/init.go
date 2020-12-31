@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"go/format"
 
-	"github.com/andyleap/gencode/schema"
+	"github.com/sylvainr/gencode-bigendian/schema"
 )
 
 type GolangBackend struct {

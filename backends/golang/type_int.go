@@ -4,7 +4,7 @@ import (
 	"sort"
 	"text/template"
 
-	"github.com/andyleap/gencode/schema"
+	"github.com/sylvainr/gencode-bigendian/schema"
 )
 
 var (

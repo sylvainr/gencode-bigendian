@@ -1,4 +1,15 @@
 # Gencode
+
+## Endianness
+
+The original "andyleap" version of gencode at https://github.com/andyleap/gencode does not support Bigendianess at this time.
+
+Andrey Stepatchev submitted a PR to add that support (see https://github.com/andyleap/gencode/pull/11), but somehow it never made it through.
+
+This repo is a straight dump from Andrey's PR.
+
+## Intro
+
 Gencode is a code generation based data serialization/deserialization system.  Gencode attempts to both encode/decode fast, and have a small data size.
 
 Code is generated from a schema that is similar to native Go semantics, though there are a few differences/additions
@@ -11,7 +22,9 @@ struct Person {
 }
 ```
 
-Run through using `gencode go -schema test.schema -package test`
+Run through using `gencode-bigendian go -schema test.schema -package test -bigendian`
+
+Remove the `-bigendian` argument for the original behavior.
 
 Yields:
 ```
